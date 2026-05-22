@@ -241,6 +241,10 @@ search_queries:
     query: '"Zürich" OR "Zurich" OR "Switzerland" "Machine Learning Engineer" OR "AI Engineer" OR "Research Scientist" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io OR site:jobs.lever.co'
     enabled: true
 
+  - name: English Job Search CH — ML/AI Engineer
+    query: 'site:englishjobsearch.ch "Machine Learning" OR "AI Engineer" OR "ML Engineer" OR "Computer Vision" OR "Deep Learning"'
+    enabled: true
+
   # -- Specialized AI job boards --
   - name: ai-jobs.net — ML/CV Engineer Europe
     query: 'site:ai-jobs.net "Machine Learning Engineer" OR "ML Engineer" OR "AI Engineer" OR "Computer Vision" remote Europe'

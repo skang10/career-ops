@@ -1,0 +1,86 @@
+# Career-Ops Profile Configuration
+# This is the single source of truth for your personal data across all modes.
+
+candidate:
+  full_name: "Xuemei Jiang"
+  email: "xuemei.jg@gmail.com"
+  phone: "+49 160 99844128"
+  location: "Heidelberg, Germany"
+  linkedin: "linkedin.com/in/xuemeijiang"
+  portfolio_url: "https://simonejiang7.github.io"
+  github: "github.com/skang10"
+
+target_roles:
+  # Your North Star roles — what you're optimizing for
+  primary:
+    - "ML Engineer"
+    - "AI Engineer"
+    - "Senior ML Engineer"
+  # Archetypes help the evaluation system score fit
+  archetypes:
+    - name: "ML Engineer"
+      level: "Junior/Mid/Senior"
+      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
+    - name: "Computer Vision Engineer"
+      level: "Junior/Mid/Senior"
+      fit: "primary"
+    - name: "AI Engineer / Applied AI"
+      level: "Junior/Mid/Senior"
+      fit: "secondary"
+    - name: "AI Platform / MLOps Engineer"
+      level: "Junior/Mid/Senior"
+      fit: "adjacent"
+
+narrative:
+  # Your professional headline (1 line)
+  headline: "AI/ML Engineer — full lifecycle from distributed training to production deployment"
+  # Your exit story — what makes you unique
+  exit_story: "Trained embedding models on 22M images at WIPO, built retrieval and evaluation systems end-to-end, and now shipping agentic applications at Everest Systems. EU Blue Card holder based in Heidelberg."
+  # Your top 3-5 superpowers
+  superpowers:
+    - "End-to-end ML: data → training → evaluation → deployment"
+    - "Large-scale embedding model training (distributed, multi-GPU, ViT architectures)"
+    - "Evaluation pipeline design for retrieval systems (metrics, latency, benchmarking)"
+    - "Practical agentic systems experience (multi-agent design, coding agents)"
+    - "Bridging research and production — demos to stakeholders, feedback to requirements"
+  # Proof points — projects, papers, achievements with measurable impact
+  proof_points:
+    - name: "WIPO Image Embedding Models"
+      hero_metric: "+10% top-5 accuracy, -30% training time on 22M images (distributed multi-GPU)"
+    - name: "Multi-view Retrieval System"
+      hero_metric: "+3.5% recall over DINOv2 ViT baseline with feature+image-level fusion"
+    - name: "Vector Search at Scale (WIPO)"
+      hero_metric: "150ms query response time on 10M+ document corpus with Milvus"
+    - name: "Less is More: Active Self-Supervised Learning in Remote Sensing"
+      url: "https://ieeexplore.ieee.org/abstract/document/10640981"
+      hero_metric: "IGARSS 2024, Oral Presentation — first author"
+    - name: "Self-Supervised Learning in Remote Sensing (co-first author)"
+      url: "https://ieeexplore.ieee.org/abstract/document/10282926"
+      hero_metric: "IGARSS 2023, Oral Presentation — co-first author"
+    - name: "RAG Evaluation Dataset"
+      hero_metric: "3,000+ labeled golden QA examples from WIPO patent documents"
+
+compensation:
+  target_range: "€75K–95K"      # Update with your actual target
+  currency: "EUR"
+  minimum: "€75K"               # Update with your walk-away number
+  location_flexibility: "Hybrid preferred; open to remote and relocation in Germany/EU"
+
+location:
+  country: "Switzerland, Germany, Netherlands, Denmark, Sweden, Norway, Finland"
+  visa_status: "EU Blue Card — no sponsorship needed within Germany"
+
+languages:
+  - language: "English"
+    level: "Fluent"
+  - language: "Chinese"
+    level: "Native"
+  - language: "Korean"
+    level: "Bilingual"
+  - language: "German"
+    level: "Basic"
+
+cv:
+  output_format: "html" # "html" (default) or "latex"
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # canva_resume_design_id: "DAxxxxxxxxx"

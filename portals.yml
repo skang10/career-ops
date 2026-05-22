@@ -98,6 +98,27 @@ title_filter:
     - "Künstliche Intelligenz"
     - "KI Engineer"
     - "Machine Learning Ingenieur"
+    - "KI Trainer"
+    - "Dozent"
+    - "Weiterbildung"
+    # -- Voice & Speech AI --
+    - "Voice AI"
+    - "Conversational AI"
+    - "Speech"
+    - "Agent"
+    # -- Engineering roles (adjacent) --
+    - "Platform Engineer"
+    - "Customer Engineer"
+    - "Integration Engineer"
+    # -- Product roles --
+    - "Product Manager"
+    - "Technical PM"
+    # -- Automation & tooling --
+    - "Automation"
+    - "Hyperautomation"
+    - "Business Systems"
+    - "Internal Tools"
+    - "Transformation"
   negative:
     # [CUSTOMIZE] Add keywords for roles you want to exclude
     - "Intern"
@@ -127,6 +148,11 @@ title_filter:
   seniority_boost:
     # These prefixes add relevance but are not required
     - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
 
 # -- Search queries --
 # Each query triggers a WebSearch. Use site: to filter by portal.
@@ -181,6 +207,10 @@ search_queries:
     query: 'site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com "Voice" OR "Speech" OR "Audio" "Machine Learning Engineer" OR "ML Engineer" OR "AI Engineer"'
     enabled: true
 
+  - name: Voice AI — AI Engineer
+    query: 'site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com "Voice" OR "Speech" "AI Engineer" OR "Deployment" OR "Integration"'
+    enabled: true
+
   # -- DACH job boards (Germany/Austria/Switzerland) --
   - name: StepStone — ML/KI Engineer Germany
     query: 'site:stepstone.de "Machine Learning Engineer" OR "KI Engineer" OR "AI Engineer" OR "Deep Learning Engineer" Deutschland OR Remote'
@@ -227,6 +257,10 @@ search_queries:
   # -- YC / Startup boards --
   - name: YC Jobs — ML/AI Engineer Europe/Remote
     query: 'site:workatastartup.com "ML Engineer" OR "Machine Learning" OR "Applied AI" OR "AI Engineer" remote Europe'
+    enabled: true
+
+  - name: YC Jobs — Applied AI
+    query: 'site:workatastartup.com "Applied AI" OR "AI Engineer" OR "AI Agent" remote Europe'
     enabled: true
 
   # -- European aggregators --
@@ -291,6 +325,7 @@ tracked_companies:
 
   # -- AI Labs & LLM providers --
 
+D
   - name: Anthropic
     careers_url: https://job-boards.greenhouse.io/anthropic
     api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs

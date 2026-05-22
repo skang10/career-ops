@@ -224,6 +224,23 @@ search_queries:
     query: 'site:welcometothejungle.com Germany OR Austria OR Switzerland OR Europe "Machine Learning" OR "AI Engineer" OR "ML Engineer"'
     enabled: true
 
+  # -- Switzerland job boards (priority market) --
+  - name: jobs.ch — ML/AI Engineer Switzerland
+    query: 'site:jobs.ch "Machine Learning" OR "AI Engineer" OR "ML Engineer" OR "KI Ingenieur" Zürich OR Bern OR Basel OR Lausanne OR Remote'
+    enabled: true
+
+  - name: topjobs.ch — ML/AI Engineer Switzerland
+    query: 'site:topjobs.ch "Machine Learning" OR "AI Engineer" OR "ML Engineer" OR "Computer Vision" OR "Deep Learning"'
+    enabled: true
+
+  - name: Welcome to the Jungle — Switzerland AI
+    query: 'site:welcometothejungle.com Switzerland OR Zürich OR Lausanne "Machine Learning" OR "AI Engineer" OR "ML Engineer"'
+    enabled: true
+
+  - name: Swiss ATS boards — ML/AI Engineer
+    query: '"Zürich" OR "Zurich" OR "Switzerland" "Machine Learning Engineer" OR "AI Engineer" OR "Research Scientist" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io OR site:jobs.lever.co'
+    enabled: true
+
   # -- Specialized AI job boards --
   - name: ai-jobs.net — ML/CV Engineer Europe
     query: 'site:ai-jobs.net "Machine Learning Engineer" OR "ML Engineer" OR "AI Engineer" OR "Computer Vision" remote Europe'
@@ -325,7 +342,6 @@ tracked_companies:
 
   # -- AI Labs & LLM providers --
 
-D
   - name: Anthropic
     careers_url: https://job-boards.greenhouse.io/anthropic
     api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
@@ -794,6 +810,36 @@ D
     scan_method: websearch
     scan_query: 'site:jobs.ashbyhq.com/cradlebio'
     notes: "Zurich CH / Amsterdam. AI-guided protein design, ML researcher roles."
+    enabled: true
+
+  - name: Sophia Genetics
+    careers_url: https://jobs.lever.co/sophiagenetics
+    notes: "Lausanne CH / Boston. AI-powered genomics platform for precision medicine."
+    enabled: true
+
+  - name: QuantCo
+    careers_url: https://jobs.ashbyhq.com/quantco
+    notes: "Zurich CH / Cambridge MA / Berlin. ML for insurance pricing, risk modeling, causal inference."
+    enabled: true
+
+  - name: Beekeeper
+    careers_url: https://job-boards.greenhouse.io/beekeeper
+    api: https://boards-api.greenhouse.io/v1/boards/beekeeper/jobs
+    notes: "Zurich CH. Frontline worker SaaS platform with ML team."
+    enabled: true
+
+  - name: Google Zurich
+    careers_url: https://careers.google.com/locations/zurich/
+    scan_method: websearch
+    scan_query: 'site:careers.google.com "Machine Learning" OR "Research Scientist" OR "Software Engineer" Zurich OR Zürich'
+    notes: "Zurich CH. Google's largest engineering hub outside the US; major ML, NLP, and Search research center."
+    enabled: true
+
+  - name: Roche
+    careers_url: https://careers.roche.com
+    scan_method: websearch
+    scan_query: 'site:careers.roche.com "Machine Learning" OR "AI" OR "Computational" OR "Data Scientist" Basel OR Zurich'
+    notes: "Basel CH. Pharma/diagnostics giant with large ML, digital health, and bioinformatics org."
     enabled: true
 
   # -- France AI ecosystem --
